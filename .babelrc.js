@@ -6,6 +6,6 @@ module.exports = {
       useBuiltIns: "usage",
       // 使用core-js@3版本
       corejs: 3,
-  }], 
+  }],
   "@babel/preset-react"],
 };

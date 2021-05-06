@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`common/PageNotFound snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="common-page-not-found"
+  >
+    Page not found.
+  </div>
+</DocumentFragment>
+`;

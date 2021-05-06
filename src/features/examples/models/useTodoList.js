@@ -5,7 +5,6 @@ import { createModel } from "hox";
 export const STATUS = {
   UNFINISH: 1,
   FINISHED: 2,
-  DELETED: 3,
 };
 
 function useTodoList() {
@@ -32,11 +31,7 @@ function useTodoList() {
   };
   const deleteItem = (id) => {
     setTodoList((list) =>
-      list.map((item) =>
-        item.id === id
-          ? { ...item, status: STATUS.DELETED }
-          : item
-      )
+      list.filter((item) => item.id !== id)
     );
   };
 

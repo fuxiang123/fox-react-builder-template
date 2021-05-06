@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`examples/Layout snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="example-page"
+  >
+    <header
+      class="header"
+    >
+      <a
+        class="header-bar"
+        href="/"
+      >
+        <img
+          alt="React Logo"
+          src=""
+        />
+        <div>
+          Fox-Builder
+        </div>
+      </a>
+    </header>
+    <div
+      class="examples-container"
+    >
+      <nav
+        class="side-panel"
+      >
+        <ul>
+          <li>
+            <a
+              href="/examples/todolist"
+            >
+              示例：待办列表
+            </a>
+          </li>
+          <li>
+            <a
+              href="/examples/RedditList"
+            >
+              示例：数据请求
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+            >
+              返回首页
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <main />
+    </div>
+  </div>
+</DocumentFragment>
+`;
