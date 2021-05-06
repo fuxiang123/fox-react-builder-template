@@ -1,0 +1,58 @@
+.home-page {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .app-header {
+    width: 100%;
+    text-align:center;
+    background-color: #222;
+    height: 150px;
+    color: white;
+    margin: auto;
+  }
+
+  .app-title {
+    font-size: 1.5em;
+  }
+
+  .app-main {
+    font-size: large;
+    width: 50%;
+
+    ul,
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    ul {
+      margin-top: 20px;
+    }
+    li {
+      margin-top: 10px;
+    }
+  
+    a {
+      color: #0288d1;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+
+
+  @keyframes app-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

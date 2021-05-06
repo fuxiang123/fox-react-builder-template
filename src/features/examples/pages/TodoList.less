@@ -1,0 +1,43 @@
+@import '../../../styles/mixin';
+
+.todolist-page {
+  input {
+    margin-right: 10px;
+  }
+
+  button {
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: cornflowerblue ;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .list-area {
+    min-height: 100px;
+
+    .todo-item {
+      margin-top: 5px;
+      div {
+        min-width: 150px;
+        display: inline-block;
+      }
+      
+      .todo-finished {
+        text-decoration: line-through;
+      }
+
+      button {
+        margin-left: 10px;
+      }
+    }
+
+  }
+
+  article {
+    max-width: 800px;
+    line-height: 25px;
+  }
+}
