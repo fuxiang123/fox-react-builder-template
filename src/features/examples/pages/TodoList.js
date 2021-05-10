@@ -45,10 +45,7 @@ export default function Counter() {
     const deleteTodo = () => {
       deleteItem(todo.id);
     };
-    if (
-      todo.status === STATUS.DELETED ||
-      (todo.status !== status && status !== 0)
-    ) {
+    if (todo.status !== status && status !== 0) {
       return <div key={todo.id} />;
     }
 
@@ -84,7 +81,6 @@ export default function Counter() {
         <button onClick={onAddItem} type="button">
           添加
         </button>
-        <p>单击待办事项，可改变其完成状态</p>
         <ul className="list-area">{listItems}</ul>
         <button onClick={handleShowAll} type="button">
           显示全部
@@ -129,16 +125,16 @@ export default function Counter() {
         <section>
           <p>
             该页面位于
-            <mark>
+            <strong>
               /src/features/examples/pages/TodoList.js
-            </mark>
+            </strong>
             。
           </p>
           <p>
             页面中的状态定义于
-            <mark>
+            <strong>
               /src/features/examples/models/useTodoList.js
-            </mark>
+            </strong>
             , 由<dfn>hox</dfn>进行创建和更新。
           </p>
         </section>
