@@ -1,16 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ReactLogo from "@/images/logo.svg";
 
 export default function Layout({ children }) {
   return (
     <div className="example-page">
-      <header className="header">
-        <a className="header-bar" href="/">
-          <img src={ReactLogo} alt="React Logo" />
-          <div>Fox-Builder</div>
-        </a>
-      </header>
       <div className="examples-container">
         <nav className="side-panel">
           <ul>

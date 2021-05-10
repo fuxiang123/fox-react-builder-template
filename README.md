@@ -1,4 +1,5 @@
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?maxAge=2592000)](http://commitizen.github.io/cz-cli/)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-brightgreen.svg?maxAge=2592000)](https://conventionalcommits.org)
 
 一个基于 webpack5 + react 的脚手架。
 
@@ -15,8 +16,8 @@ npm run build // 打包
 ```
 npm run build:size // 构建体积分析
 npm run build:speed // 构建速度分析
-npm run serve // 开启一个本地服务器，可用以调试构建包
 npm run commit // 使用[commitizen](https://github.com/commitizen-tools/commitizen)提交commit message
+npm run release // 使用[standard-version](https://github.com/conventional-changelog/standard-version)发布新版本
 ```
 
 ## 特性
@@ -24,6 +25,7 @@ npm run commit // 使用[commitizen](https://github.com/commitizen-tools/commiti
 - 基于 feature 的项目架构
 - travis 持续集成
 - Gzip 压缩
+- 移动端适配
 - 使用 webpack5 处理打包
 - 使用 [react-refresh-webpack-plugin](https://github.com/pmmmwh/react-refresh-webpack-plugin) 处理 react 热更新
 - 使用 swr 处理数据请求
