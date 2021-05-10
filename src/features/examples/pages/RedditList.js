@@ -1,8 +1,8 @@
 import React from "react";
 import useRedditList from "../data/useRedditList";
 
-const redditList = () => {
-  const { data, error } = useRedditList("redditlist");
+const RedditList = () => {
+  const { data, error } = useRedditList();
 
   if (error) return <div>出错了...</div>;
   if (!data) return <div>加载中...</div>;
@@ -11,7 +11,7 @@ const redditList = () => {
     return <div className="no-items-tip">没有数据</div>;
   }
   return (
-    <ul>
+    <ul data-testid="redditlist">
       {data.slice(0, 5).map((item) => (
         <li key={item.data.id}>
           <a
@@ -27,10 +27,10 @@ const redditList = () => {
   );
 };
 
-const RandomCat = () => {
+const RedditListPage = () => {
   return (
-    <div className="reddit-list-page">
-      {redditList()}
+    <div>
+      <RedditList />
       <article>
         <section>
           <p>
@@ -71,16 +71,16 @@ const RandomCat = () => {
         <section>
           <p>
             该页面位于
-            <mark>
+            <strong>
               /src/features/examples/pages/RedditList.js
-            </mark>
+            </strong>
             。
           </p>
           <p>
             页面中的数据请求定义于
-            <mark>
+            <strong>
               /src/features/examples/data/useRedditList.js
-            </mark>
+            </strong>
             。
           </p>
         </section>
@@ -89,4 +89,4 @@ const RandomCat = () => {
   );
 };
 
-export default RandomCat;
+export default RedditListPage;

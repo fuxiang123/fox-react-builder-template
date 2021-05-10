@@ -3,3 +3,4 @@ dist
 .history
 yarn-error.log
 .vscode
+coverage
