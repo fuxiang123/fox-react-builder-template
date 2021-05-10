@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.0.0 (2021-05-10)
+
+
+### 新功能
+
+* first commit ([147e71f](https://github.com/fuxiang123/fox-react-builder-template/commit/147e71fe9ee98c9d494b2214c4d8db6ab7e19045))
+
+
+### 构建
+
+* 修改项目名 ([0eacd12](https://github.com/fuxiang123/fox-react-builder-template/commit/0eacd12226b9f6b082ccf47034676d8510691542))
+
+
+### CI
+
+* 添加ci配置文件 ([c651c61](https://github.com/fuxiang123/fox-react-builder-template/commit/c651c61a56f2eb9b2b329b15ada9ffea1269ea66))
+
 ## 1.7.0 (2021-05-10)
 
 
