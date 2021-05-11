@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { srcPath, rootPath } = require("./constants");
 
 module.exports = {
@@ -32,6 +33,15 @@ module.exports = {
         generator: {
           filename: "static/assets/[hash:8].[name][ext]",
         },
+      },
+      {
+        test: /\.less$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "less-loader",
+          "postcss-loader",
+        ],
       },
     ],
   },

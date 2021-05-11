@@ -13,6 +13,7 @@ module.exports = {
   },
   // 自定义全局变量
   globals: {},
+  ignorePatterns: ["node_modules", "dist", "coverage"],
   rules: {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
