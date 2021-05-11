@@ -11,7 +11,7 @@
     "build": "webpack --progress --config ./configs/webpack.prod.js",
     "build:size": "webpack --progress --env size --config ./configs/webpack.prod.js",
     "build:speed": "webpack --progress --env speed --config ./configs/webpack.prod.js",
-    "serve": "start http://localhost:5428 & npx serve -l 5428 -s dist ",
+    "serve": "npx serve -l 5428 -s dist ",
     "lint": "prettier --write",
     "pre-commit": "lint-staged",
     "commit": "git-cz",
@@ -64,6 +64,7 @@
     "eslint-plugin-react": "^7.23.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-webpack-plugin": "^2.5.3",
+    "glob": "^7.1.7",
     "html-webpack-plugin": "^5.3.1",
     "husky": "^6.0.0",
     "jest": "^26.6.3",
@@ -108,19 +109,63 @@
       "@commitlint/config-conventional"
     ]
   },
-  "standard-version":{
+  "standard-version": {
     "types": [
-      {"type": "chore", "section":"其他", "hidden": true},
-      {"type": "revert", "section":"撤销", "hidden": false},
-      {"type": "feat", "section": "新功能", "hidden": false},
-      {"type": "fix", "section": "Bug修复", "hidden": false},
-      {"type": "docs", "section":"文档", "hidden": false},
-      {"type": "style", "section":"样式", "hidden": false},
-      {"type": "refactor", "section":"重构", "hidden": false},
-      {"type": "perf", "section":"性能", "hidden": false},
-      {"type": "test", "section":"测试", "hidden": false},
-      {"type": "build", "section":"构建", "hidden": false},
-      {"type": "ci", "section":"CI", "hidden":false}
+      {
+        "type": "chore",
+        "section": "其他",
+        "hidden": true
+      },
+      {
+        "type": "revert",
+        "section": "撤销",
+        "hidden": false
+      },
+      {
+        "type": "feat",
+        "section": "新功能",
+        "hidden": false
+      },
+      {
+        "type": "fix",
+        "section": "Bug修复",
+        "hidden": false
+      },
+      {
+        "type": "docs",
+        "section": "文档",
+        "hidden": false
+      },
+      {
+        "type": "style",
+        "section": "样式",
+        "hidden": false
+      },
+      {
+        "type": "refactor",
+        "section": "重构",
+        "hidden": false
+      },
+      {
+        "type": "perf",
+        "section": "性能",
+        "hidden": false
+      },
+      {
+        "type": "test",
+        "section": "测试",
+        "hidden": false
+      },
+      {
+        "type": "build",
+        "section": "构建",
+        "hidden": false
+      },
+      {
+        "type": "ci",
+        "section": "CI",
+        "hidden": false
+      }
     ]
   },
   "keywords": [],

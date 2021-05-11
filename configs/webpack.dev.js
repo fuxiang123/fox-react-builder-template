@@ -23,15 +23,6 @@ const devConfig = {
           },
         ],
       },
-      {
-        test: /\.less$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          "less-loader",
-          "postcss-loader",
-        ],
-      },
     ],
   },
   // react热模块替换
