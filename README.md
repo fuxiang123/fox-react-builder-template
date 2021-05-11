@@ -16,8 +16,8 @@ npm run build // 打包
 ```
 npm run build:size // 构建体积分析
 npm run build:speed // 构建速度分析
-npm run commit // 使用[commitizen](https://github.com/commitizen-tools/commitizen)提交commit message
-npm run release // 使用[standard-version](https://github.com/conventional-changelog/standard-version)发布新版本
+npm run commit // 生成commit message
+npm run release // 发布新版本
 ```
 
 ## 特性
@@ -26,11 +26,10 @@ npm run release // 使用[standard-version](https://github.com/conventional-chan
 - travis 持续集成
 - Gzip 压缩
 - 移动端适配
-- 使用 webpack5 处理打包
+- 使用 [webpack5](https://webpack.docschina.org/) 处理打包
 - 使用 [react-refresh-webpack-plugin](https://github.com/pmmmwh/react-refresh-webpack-plugin) 处理 react 热更新
-- 使用 swr 处理数据请求
-- 使用 Hox 管理应用状态
-- 使用 less + postcss 处理 css
+- 使用 [swr](https://github.com/vercel/swr) 处理数据请求
+- 使用 [Hox](https://github.com/umijs/hox) 管理应用状态
 - 使用[commitizen](https://github.com/commitizen-tools/commitizen)规范 commit message
 - 使用[standard-version](https://github.com/conventional-changelog/standard-version)管理版本
 - 使用[jest](https://jestjs.io/) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)进行单元测试
