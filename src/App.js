@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import renderRoutes from "./utils/renderRouteConfig";
-import { PageNotFound } from "./features/common";
+import { Header, PageNotFound } from "./features/common";
 import homeRoute from "./features/home/route";
 import examplesRoute from "./features/examples/route";
 
@@ -27,7 +27,12 @@ const routeConfig = [
 
 function App() {
   const children = renderRoutes(routeConfig, "/");
-  return <BrowserRouter>{children}</BrowserRouter>;
+  return (
+    <div>
+      <Header />
+      <BrowserRouter>{children}</BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
